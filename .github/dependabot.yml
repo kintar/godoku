@@ -7,7 +7,7 @@ updates:
       interval: "weekly"
       day: "monday"
       time: "05:00"
-      timezone: "America/New_York"
+      timezone: "America/Chicago"
     labels:
       - "dependencies"
     commit-message:
@@ -20,7 +20,7 @@ updates:
       interval: "weekly"
       day: "monday"
       time: "05:00"
-      timezone: "America/New_York"
+      timezone: "America/Chicago"
     labels:
       - "dependencies"
     commit-message:
@@ -33,7 +33,7 @@ updates:
       interval: "weekly"
       day: "monday"
       time: "05:00"
-      timezone: "America/New_York"
+      timezone: "America/Chicago"
     labels:
       - "dependencies"
     commit-message:
