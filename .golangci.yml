@@ -1,0 +1,33 @@
+#file: noinspection SpellCheckingInspection
+version: "2"
+linters:
+  enable:
+    - embeddedstructfieldcheck
+    - errname
+    - exhaustive
+    - thelper
+    - tparallel
+    - unconvert
+    - unparam
+    - wastedassign
+  exclusions:
+    generated: lax
+    presets:
+      - comments
+      - common-false-positives
+      - legacy
+      - std-error-handling
+    paths:
+      - third_party$
+      - builtin$
+      - examples$
+  settings:
+    exhaustive:
+      default-signifies-exhaustive: true
+formatters:
+  settings:
+    gofmt:
+      simplify: true
+      rewrite-rules:
+        - pattern: 'interface{}'
+          replacement: 'any'
